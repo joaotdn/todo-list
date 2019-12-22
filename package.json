@@ -1,0 +1,19 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "Teste para vaga de dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaotdn/todo-list.git"
+  },
+  "author": "João Teodoro <joaotdn@gmail.com> (https://github.com/joaotdn/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaotdn/todo-list/issues"
+  },
+  "homepage": "https://github.com/joaotdn/todo-list#readme"
+}
