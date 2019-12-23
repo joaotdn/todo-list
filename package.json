@@ -1,10 +1,10 @@
 {
   "name": "todo-list-app",
   "version": "1.0.0",
-  "description": "Teste para vaga de dev",
+  "description": "Ferramenta para administrar tarefas",
   "main": "index.js",
   "scripts": {
-    "start":  "node index.js"
+    "start": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/joaotdn/todo-list#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
