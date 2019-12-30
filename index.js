@@ -37,7 +37,7 @@ router.get('/edit/:id/', (req, res) => {
     const {id} = req.params;
     app.locals.tasks.forEach(task => {
         if (task.id === id) {
-            task.name = req.body.name;
+            task.name = req.query.name;
             console.log('Tarefa atualizada: ', task);
         }
     });

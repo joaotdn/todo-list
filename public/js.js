@@ -81,6 +81,8 @@ jQuery(function ($) {
         parent.find('.card-header')
             .text('')
             .append(`<input type="text" placeholder="Nome da tarefa" value="${task}">`);
+
+        cardEvents();
     };
 
     const updateCard = function () {
@@ -89,11 +91,12 @@ jQuery(function ($) {
         const name = parent.find('.card-header').find('input').val();
         $(this).addClass('d-none');
 
-        if (name !== '') {
+        if (typeof name !== undefined) {
             $.ajax({
                 url: `/edit/${id}/`,
                 type: 'get',
-                data: { name }
+                data: { name },
+                dataType: 'json',
             })
                 .always(function () {
                     parent.find('.edit-card').removeClass('d-none');
