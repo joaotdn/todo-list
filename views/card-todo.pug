@@ -1,4 +1,4 @@
-form.card(action='', novalidate)
+div.card(action='', id=`_${i.id}`, novalidate)
     div.card-header= i.name
     div.card-body
         div.card-text.clearfix
@@ -10,3 +10,9 @@ form.card(action='', novalidate)
             button.btn.btn-warning.btn-sm.float-right.edit-card(type='button')
                 i.fas.fa-edit
                 | Editar
+            button.btn.btn-success.btn-sm.float-right.save-card.d-none(type='button')
+                i.fas.fa-edit
+                | Salvar
+            button.btn.btn-success.btn-sm.float-right.update-card.d-none(type='button')
+                i.fas.fa-edit
+                | Atualizar
