@@ -81,8 +81,6 @@ jQuery(function ($) {
         parent.find('.card-header')
             .text('')
             .append(`<input type="text" placeholder="Nome da tarefa" value="${task}">`);
-
-        cardEvents();
     };
 
     const updateCard = function () {
